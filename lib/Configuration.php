@@ -121,6 +121,16 @@ class Configuration
     }
 
     /**
+     * Constructor with host
+     */
+    public static function withHost($host)
+    {
+        $config = new self();
+        $config->setHost($host);
+        return $config;
+    }
+
+    /**
      * Sets API key
      *
      * @param string $apiKeyIdentifier API key identifier (authentication scheme)
