@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Dounasth\Ngsiv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Dounasth\Ngsiv2\ApiException;
+use Dounasth\Ngsiv2\Configuration;
+use Dounasth\Ngsiv2\HeaderSelector;
+use Dounasth\Ngsiv2\ObjectSerializer;
 
 /**
  * RegistrationsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class RegistrationsApi
      * Create Registration
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateRegistrationRequest $body  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,9 +110,9 @@ class RegistrationsApi
      * Create Registration
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateRegistrationRequest $body  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -164,7 +164,7 @@ class RegistrationsApi
      * Create Registration
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateRegistrationRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -185,7 +185,7 @@ class RegistrationsApi
      * Create Registration
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateRegistrationRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -222,7 +222,7 @@ class RegistrationsApi
      * Create request for operation 'createRegistration'
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateRegistrationRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -336,7 +336,7 @@ class RegistrationsApi
      *
      * @param  string $registration_id registration Id. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -352,7 +352,7 @@ class RegistrationsApi
      *
      * @param  string $registration_id registration Id. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -570,9 +570,9 @@ class RegistrationsApi
      * @param  double $offset Skip a number of registrations (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ListRegistrationsResponse[]
+     * @return \Dounasth\Ngsiv2\Model\ListRegistrationsResponse[]
      */
     public function listRegistrations($limit = null, $offset = null, $options = null)
     {
@@ -589,13 +589,13 @@ class RegistrationsApi
      * @param  double $offset Skip a number of registrations (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ListRegistrationsResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\ListRegistrationsResponse[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listRegistrationsWithHttpInfo($limit = null, $offset = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\ListRegistrationsResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\ListRegistrationsResponse[]';
         $request = $this->listRegistrationsRequest($limit, $offset, $options);
 
         try {
@@ -647,7 +647,7 @@ class RegistrationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ListRegistrationsResponse[]',
+                        '\Dounasth\Ngsiv2\Model\ListRegistrationsResponse[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -693,7 +693,7 @@ class RegistrationsApi
      */
     public function listRegistrationsAsyncWithHttpInfo($limit = null, $offset = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\ListRegistrationsResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\ListRegistrationsResponse[]';
         $request = $this->listRegistrationsRequest($limit, $offset, $options);
 
         return $this->client
@@ -845,9 +845,9 @@ class RegistrationsApi
      *
      * @param  string $registration_id registration Id. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RetrieveRegistrationResponse
+     * @return \Dounasth\Ngsiv2\Model\RetrieveRegistrationResponse
      */
     public function retrieveRegistration($registration_id)
     {
@@ -862,13 +862,13 @@ class RegistrationsApi
      *
      * @param  string $registration_id registration Id. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RetrieveRegistrationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\RetrieveRegistrationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveRegistrationWithHttpInfo($registration_id)
     {
-        $returnType = '\Swagger\Client\Model\RetrieveRegistrationResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveRegistrationResponse';
         $request = $this->retrieveRegistrationRequest($registration_id);
 
         try {
@@ -920,7 +920,7 @@ class RegistrationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RetrieveRegistrationResponse',
+                        '\Dounasth\Ngsiv2\Model\RetrieveRegistrationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -962,7 +962,7 @@ class RegistrationsApi
      */
     public function retrieveRegistrationAsyncWithHttpInfo($registration_id)
     {
-        $returnType = '\Swagger\Client\Model\RetrieveRegistrationResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveRegistrationResponse';
         $request = $this->retrieveRegistrationRequest($registration_id);
 
         return $this->client
@@ -1114,9 +1114,9 @@ class RegistrationsApi
      *
      * @param  string $registration_id registration Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRegistrationRequest $body  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1132,9 +1132,9 @@ class RegistrationsApi
      *
      * @param  string $registration_id registration Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRegistrationRequest $body  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1187,7 +1187,7 @@ class RegistrationsApi
      *
      * @param  string $registration_id registration Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRegistrationRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1209,7 +1209,7 @@ class RegistrationsApi
      *
      * @param  string $registration_id registration Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRegistrationRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1247,7 +1247,7 @@ class RegistrationsApi
      *
      * @param  string $registration_id registration Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRegistrationRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRegistrationRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

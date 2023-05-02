@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Dounasth\Ngsiv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Dounasth\Ngsiv2\ApiException;
+use Dounasth\Ngsiv2\Configuration;
+use Dounasth\Ngsiv2\HeaderSelector;
+use Dounasth\Ngsiv2\ObjectSerializer;
 
 /**
  * APIEntryPointApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class APIEntryPointApi
      * Retrieve API Resources
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RetrieveApiResourcesResponse
+     * @return \Dounasth\Ngsiv2\Model\RetrieveApiResourcesResponse
      */
     public function retrieveAPIResources()
     {
@@ -109,13 +109,13 @@ class APIEntryPointApi
      * Retrieve API Resources
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RetrieveApiResourcesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\RetrieveApiResourcesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveAPIResourcesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\RetrieveApiResourcesResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveApiResourcesResponse';
         $request = $this->retrieveAPIResourcesRequest();
 
         try {
@@ -167,7 +167,7 @@ class APIEntryPointApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RetrieveApiResourcesResponse',
+                        '\Dounasth\Ngsiv2\Model\RetrieveApiResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class APIEntryPointApi
      */
     public function retrieveAPIResourcesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\RetrieveApiResourcesResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveApiResourcesResponse';
         $request = $this->retrieveAPIResourcesRequest();
 
         return $this->client

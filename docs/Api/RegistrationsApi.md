@@ -1,4 +1,4 @@
-# Swagger\Client\RegistrationsApi
+# Dounasth\Ngsiv2\RegistrationsApi
 
 All URIs are relative to *http://orion.lab.fiware.org*
 
@@ -23,13 +23,13 @@ Creates a new context provider registration. This is typically used for binding 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RegistrationsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\RegistrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\CreateRegistrationRequest(); // \Swagger\Client\Model\CreateRegistrationRequest | 
+$body = new \Dounasth\Ngsiv2\Model\CreateRegistrationRequest(); // \Dounasth\Ngsiv2\Model\CreateRegistrationRequest | 
 
 try {
     $apiInstance->createRegistration($content_type, $body);
@@ -44,7 +44,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\CreateRegistrationRequest**](../Model/CreateRegistrationRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\CreateRegistrationRequest**](../Model/CreateRegistrationRequest.md)|  |
 
 ### Return type
 
@@ -73,7 +73,7 @@ Cancels a context provider registration. Response: * Successful operation uses 2
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RegistrationsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\RegistrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -110,7 +110,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listRegistrations**
-> \Swagger\Client\Model\ListRegistrationsResponse[] listRegistrations($limit, $offset, $options)
+> \Dounasth\Ngsiv2\Model\ListRegistrationsResponse[] listRegistrations($limit, $offset, $options)
 
 List Registrations
 
@@ -121,7 +121,7 @@ Lists all the context provider registrations present in the system.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RegistrationsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\RegistrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ListRegistrationsResponse[]**](../Model/ListRegistrationsResponse.md)
+[**\Dounasth\Ngsiv2\Model\ListRegistrationsResponse[]**](../Model/ListRegistrationsResponse.md)
 
 ### Authorization
 
@@ -163,7 +163,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveRegistration**
-> \Swagger\Client\Model\RetrieveRegistrationResponse retrieveRegistration($registration_id)
+> \Dounasth\Ngsiv2\Model\RetrieveRegistrationResponse retrieveRegistration($registration_id)
 
 Retrieve Registration
 
@@ -174,7 +174,7 @@ The response is the registration represented by a JSON object as described at th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RegistrationsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\RegistrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveRegistrationResponse**](../Model/RetrieveRegistrationResponse.md)
+[**\Dounasth\Ngsiv2\Model\RetrieveRegistrationResponse**](../Model/RetrieveRegistrationResponse.md)
 
 ### Authorization
 
@@ -223,14 +223,14 @@ Only the fields included in the request are updated in the registration. Respons
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RegistrationsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\RegistrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $registration_id = "registration_id_example"; // string | registration Id.
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\UpdateRegistrationRequest(); // \Swagger\Client\Model\UpdateRegistrationRequest | 
+$body = new \Dounasth\Ngsiv2\Model\UpdateRegistrationRequest(); // \Dounasth\Ngsiv2\Model\UpdateRegistrationRequest | 
 
 try {
     $apiInstance->updateRegistration($registration_id, $content_type, $body);
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **registration_id** | **string**| registration Id. |
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\UpdateRegistrationRequest**](../Model/UpdateRegistrationRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\UpdateRegistrationRequest**](../Model/UpdateRegistrationRequest.md)|  |
 
 ### Return type
 

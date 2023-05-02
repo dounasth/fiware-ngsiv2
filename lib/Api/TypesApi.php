@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Dounasth\Ngsiv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Dounasth\Ngsiv2\ApiException;
+use Dounasth\Ngsiv2\Configuration;
+use Dounasth\Ngsiv2\HeaderSelector;
+use Dounasth\Ngsiv2\ObjectSerializer;
 
 /**
  * TypesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class TypesApi
      * @param  double $offset Skip a number of records. (optional)
      * @param  string $options Options dictionary. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ListEntityTypesResponse[]
+     * @return \Dounasth\Ngsiv2\Model\ListEntityTypesResponse[]
      */
     public function listEntityTypes($limit = null, $offset = null, $options = null)
     {
@@ -115,13 +115,13 @@ class TypesApi
      * @param  double $offset Skip a number of records. (optional)
      * @param  string $options Options dictionary. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ListEntityTypesResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\ListEntityTypesResponse[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listEntityTypesWithHttpInfo($limit = null, $offset = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\ListEntityTypesResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\ListEntityTypesResponse[]';
         $request = $this->listEntityTypesRequest($limit, $offset, $options);
 
         try {
@@ -173,7 +173,7 @@ class TypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ListEntityTypesResponse[]',
+                        '\Dounasth\Ngsiv2\Model\ListEntityTypesResponse[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class TypesApi
      */
     public function listEntityTypesAsyncWithHttpInfo($limit = null, $offset = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\ListEntityTypesResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\ListEntityTypesResponse[]';
         $request = $this->listEntityTypesRequest($limit, $offset, $options);
 
         return $this->client
@@ -371,9 +371,9 @@ class TypesApi
      *
      * @param  string $entity_type Entity Type (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RetrieveEntityTypeResponse
+     * @return \Dounasth\Ngsiv2\Model\RetrieveEntityTypeResponse
      */
     public function retrieveEntityType($entity_type)
     {
@@ -388,13 +388,13 @@ class TypesApi
      *
      * @param  string $entity_type Entity Type (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RetrieveEntityTypeResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\RetrieveEntityTypeResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEntityTypeWithHttpInfo($entity_type)
     {
-        $returnType = '\Swagger\Client\Model\RetrieveEntityTypeResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveEntityTypeResponse';
         $request = $this->retrieveEntityTypeRequest($entity_type);
 
         try {
@@ -446,7 +446,7 @@ class TypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RetrieveEntityTypeResponse',
+                        '\Dounasth\Ngsiv2\Model\RetrieveEntityTypeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -488,7 +488,7 @@ class TypesApi
      */
     public function retrieveEntityTypeAsyncWithHttpInfo($entity_type)
     {
-        $returnType = '\Swagger\Client\Model\RetrieveEntityTypeResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveEntityTypeResponse';
         $request = $this->retrieveEntityTypeRequest($entity_type);
 
         return $this->client

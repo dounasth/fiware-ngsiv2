@@ -1,4 +1,4 @@
-# Swagger\Client\TypesApi
+# Dounasth\Ngsiv2\TypesApi
 
 All URIs are relative to *http://orion.lab.fiware.org*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **listEntityTypes**
-> \Swagger\Client\Model\ListEntityTypesResponse[] listEntityTypes($limit, $offset, $options)
+> \Dounasth\Ngsiv2\Model\ListEntityTypesResponse[] listEntityTypes($limit, $offset, $options)
 
 List Entity Types
 
@@ -20,7 +20,7 @@ If the `values` option is not in use, this operation returns a JSON array with t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TypesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\TypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ListEntityTypesResponse[]**](../Model/ListEntityTypesResponse.md)
+[**\Dounasth\Ngsiv2\Model\ListEntityTypesResponse[]**](../Model/ListEntityTypesResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveEntityType**
-> \Swagger\Client\Model\RetrieveEntityTypeResponse retrieveEntityType($entity_type)
+> \Dounasth\Ngsiv2\Model\RetrieveEntityTypeResponse retrieveEntityType($entity_type)
 
 Retrieve entity type
 
@@ -73,7 +73,7 @@ This operation returns a JSON object with information about the type: * `attrs` 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TypesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\TypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveEntityTypeResponse**](../Model/RetrieveEntityTypeResponse.md)
+[**\Dounasth\Ngsiv2\Model\RetrieveEntityTypeResponse**](../Model/RetrieveEntityTypeResponse.md)
 
 ### Authorization
 

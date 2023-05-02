@@ -1,4 +1,4 @@
-# Swagger\Client\AttributeValueApi
+# Dounasth\Ngsiv2\AttributeValueApi
 
 All URIs are relative to *http://orion.lab.fiware.org*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **getAttributeValue**
-> \Swagger\Client\Model\GetAttributeValueResponse getAttributeValue($entity_id, $attr_name, $type)
+> \Dounasth\Ngsiv2\Model\GetAttributeValueResponse getAttributeValue($entity_id, $attr_name, $type)
 
 Get Attribute Value
 
@@ -20,7 +20,7 @@ This operation returns the `value` property with the value of the attribute. * I
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AttributeValueApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\AttributeValueApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetAttributeValueResponse**](../Model/GetAttributeValueResponse.md)
+[**\Dounasth\Ngsiv2\Model\GetAttributeValueResponse**](../Model/GetAttributeValueResponse.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ The request payload is the new attribute value. * If the request payload MIME ty
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AttributeValueApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\AttributeValueApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -81,7 +81,7 @@ $apiInstance = new Swagger\Client\Api\AttributeValueApi(
 $entity_id = "entity_id_example"; // string | Id of the entity to be updated.
 $attr_name = "attr_name_example"; // string | Attribute name.
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\UpdateAttributeValueRequest(); // \Swagger\Client\Model\UpdateAttributeValueRequest | 
+$body = new \Dounasth\Ngsiv2\Model\UpdateAttributeValueRequest(); // \Dounasth\Ngsiv2\Model\UpdateAttributeValueRequest | 
 $type = "type_example"; // string | Entity type, to avoid ambiguity in case there are several entities with the same entity id.
 
 try {
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
  **entity_id** | **string**| Id of the entity to be updated. |
  **attr_name** | **string**| Attribute name. |
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\UpdateAttributeValueRequest**](../Model/UpdateAttributeValueRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\UpdateAttributeValueRequest**](../Model/UpdateAttributeValueRequest.md)|  |
  **type** | **string**| Entity type, to avoid ambiguity in case there are several entities with the same entity id. | [optional]
 
 ### Return type

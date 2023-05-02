@@ -1,4 +1,4 @@
-# Swagger\Client\SubscriptionsApi
+# Dounasth\Ngsiv2\SubscriptionsApi
 
 All URIs are relative to *http://orion.lab.fiware.org*
 
@@ -23,13 +23,13 @@ Creates a new subscription. The subscription is represented by a JSON object as 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SubscriptionsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\CreateSubscriptionRequest(); // \Swagger\Client\Model\CreateSubscriptionRequest | 
+$body = new \Dounasth\Ngsiv2\Model\CreateSubscriptionRequest(); // \Dounasth\Ngsiv2\Model\CreateSubscriptionRequest | 
 
 try {
     $apiInstance->createSubscription($content_type, $body);
@@ -44,7 +44,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\CreateSubscriptionRequest**](../Model/CreateSubscriptionRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\CreateSubscriptionRequest**](../Model/CreateSubscriptionRequest.md)|  |
 
 ### Return type
 
@@ -73,7 +73,7 @@ Cancels subscription. Response: * Successful operation uses 204 No Content * Err
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SubscriptionsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -110,7 +110,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listSubscriptions**
-> \Swagger\Client\Model\ListSubscriptionsResponse[] listSubscriptions($limit, $offset, $options)
+> \Dounasth\Ngsiv2\Model\ListSubscriptionsResponse[] listSubscriptions($limit, $offset, $options)
 
 List Subscriptions
 
@@ -121,7 +121,7 @@ Returns a list of all the subscriptions present in the system. Response: * Succe
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SubscriptionsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ListSubscriptionsResponse[]**](../Model/ListSubscriptionsResponse.md)
+[**\Dounasth\Ngsiv2\Model\ListSubscriptionsResponse[]**](../Model/ListSubscriptionsResponse.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ The response is the subscription represented by a JSON object as described at th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SubscriptionsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -223,14 +223,14 @@ Only the fields included in the request are updated in the subscription. Respons
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SubscriptionsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $subscription_id = "subscription_id_example"; // string | subscription Id.
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\UpdateSubscriptionRequest(); // \Swagger\Client\Model\UpdateSubscriptionRequest | 
+$body = new \Dounasth\Ngsiv2\Model\UpdateSubscriptionRequest(); // \Dounasth\Ngsiv2\Model\UpdateSubscriptionRequest | 
 
 try {
     $apiInstance->updateSubscription($subscription_id, $content_type, $body);
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **subscription_id** | **string**| subscription Id. |
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\UpdateSubscriptionRequest**](../Model/UpdateSubscriptionRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\UpdateSubscriptionRequest**](../Model/UpdateSubscriptionRequest.md)|  |
 
 ### Return type
 

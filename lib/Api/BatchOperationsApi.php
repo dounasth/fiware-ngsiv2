@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Dounasth\Ngsiv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Dounasth\Ngsiv2\ApiException;
+use Dounasth\Ngsiv2\Configuration;
+use Dounasth\Ngsiv2\HeaderSelector;
+use Dounasth\Ngsiv2\ObjectSerializer;
 
 /**
  * BatchOperationsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,10 +93,10 @@ class BatchOperationsApi
      * Notify
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\NotifyRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\NotifyRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -111,10 +111,10 @@ class BatchOperationsApi
      * Notify
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\NotifyRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\NotifyRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -166,7 +166,7 @@ class BatchOperationsApi
      * Notify
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\NotifyRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\NotifyRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
      * @throws \InvalidArgumentException
@@ -188,7 +188,7 @@ class BatchOperationsApi
      * Notify
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\NotifyRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\NotifyRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
      * @throws \InvalidArgumentException
@@ -226,7 +226,7 @@ class BatchOperationsApi
      * Create request for operation 'notify'
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\NotifyRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\NotifyRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
      * @throws \InvalidArgumentException
@@ -344,15 +344,15 @@ class BatchOperationsApi
      * Query
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\QueryRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\QueryRequest $body  (required)
      * @param  double $limit Limit the number of entities to be retrieved. (optional)
      * @param  double $offset Skip a number of records. (optional)
      * @param  string $order_by Criteria for ordering results. See \&quot;Ordering Results\&quot; section for details. (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\QueryResponse[]
+     * @return \Dounasth\Ngsiv2\Model\QueryResponse[]
      */
     public function query($content_type, $body, $limit = null, $offset = null, $order_by = null, $options = null)
     {
@@ -366,19 +366,19 @@ class BatchOperationsApi
      * Query
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\QueryRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\QueryRequest $body  (required)
      * @param  double $limit Limit the number of entities to be retrieved. (optional)
      * @param  double $offset Skip a number of records. (optional)
      * @param  string $order_by Criteria for ordering results. See \&quot;Ordering Results\&quot; section for details. (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\QueryResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\QueryResponse[], HTTP status code, HTTP response headers (array of strings)
      */
     public function queryWithHttpInfo($content_type, $body, $limit = null, $offset = null, $order_by = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\QueryResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\QueryResponse[]';
         $request = $this->queryRequest($content_type, $body, $limit, $offset, $order_by, $options);
 
         try {
@@ -430,7 +430,7 @@ class BatchOperationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\QueryResponse[]',
+                        '\Dounasth\Ngsiv2\Model\QueryResponse[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -446,7 +446,7 @@ class BatchOperationsApi
      * Query
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\QueryRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\QueryRequest $body  (required)
      * @param  double $limit Limit the number of entities to be retrieved. (optional)
      * @param  double $offset Skip a number of records. (optional)
      * @param  string $order_by Criteria for ordering results. See \&quot;Ordering Results\&quot; section for details. (optional)
@@ -471,7 +471,7 @@ class BatchOperationsApi
      * Query
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\QueryRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\QueryRequest $body  (required)
      * @param  double $limit Limit the number of entities to be retrieved. (optional)
      * @param  double $offset Skip a number of records. (optional)
      * @param  string $order_by Criteria for ordering results. See \&quot;Ordering Results\&quot; section for details. (optional)
@@ -482,7 +482,7 @@ class BatchOperationsApi
      */
     public function queryAsyncWithHttpInfo($content_type, $body, $limit = null, $offset = null, $order_by = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\QueryResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\QueryResponse[]';
         $request = $this->queryRequest($content_type, $body, $limit, $offset, $order_by, $options);
 
         return $this->client
@@ -526,7 +526,7 @@ class BatchOperationsApi
      * Create request for operation 'query'
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\QueryRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\QueryRequest $body  (required)
      * @param  double $limit Limit the number of entities to be retrieved. (optional)
      * @param  double $offset Skip a number of records. (optional)
      * @param  string $order_by Criteria for ordering results. See \&quot;Ordering Results\&quot; section for details. (optional)
@@ -659,10 +659,10 @@ class BatchOperationsApi
      * Update
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -677,10 +677,10 @@ class BatchOperationsApi
      * Update
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -732,7 +732,7 @@ class BatchOperationsApi
      * Update
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
      * @throws \InvalidArgumentException
@@ -754,7 +754,7 @@ class BatchOperationsApi
      * Update
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
      * @throws \InvalidArgumentException
@@ -792,7 +792,7 @@ class BatchOperationsApi
      * Create request for operation 'update'
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
      * @throws \InvalidArgumentException

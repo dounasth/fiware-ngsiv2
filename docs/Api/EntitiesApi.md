@@ -1,4 +1,4 @@
-# Swagger\Client\EntitiesApi
+# Dounasth\Ngsiv2\EntitiesApi
 
 All URIs are relative to *http://orion.lab.fiware.org*
 
@@ -26,13 +26,13 @@ The payload is an object representing the entity to be created. The object follo
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EntitiesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\EntitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\CreateEntityRequest(); // \Swagger\Client\Model\CreateEntityRequest | 
+$body = new \Dounasth\Ngsiv2\Model\CreateEntityRequest(); // \Dounasth\Ngsiv2\Model\CreateEntityRequest | 
 $options = "options_example"; // string | Options dictionary
 
 try {
@@ -48,7 +48,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\CreateEntityRequest**](../Model/CreateEntityRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\CreateEntityRequest**](../Model/CreateEntityRequest.md)|  |
  **options** | **string**| Options dictionary | [optional]
 
 ### Return type
@@ -67,7 +67,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listEntities**
-> \Swagger\Client\Model\ListEntitiesResponse[] listEntities($id, $type, $id_pattern, $type_pattern, $q, $mq, $georel, $geometry, $coords, $limit, $offset, $attrs, $metadata, $order_by, $options)
+> \Dounasth\Ngsiv2\Model\ListEntitiesResponse[] listEntities($id, $type, $id_pattern, $type_pattern, $q, $mq, $georel, $geometry, $coords, $limit, $offset, $attrs, $metadata, $order_by, $options)
 
 List Entities
 
@@ -78,7 +78,7 @@ Retrieves a list of entities that match different criteria by id, type, pattern 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EntitiesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\EntitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -130,7 +130,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ListEntitiesResponse[]**](../Model/ListEntitiesResponse.md)
+[**\Dounasth\Ngsiv2\Model\ListEntitiesResponse[]**](../Model/ListEntitiesResponse.md)
 
 ### Authorization
 
@@ -155,7 +155,7 @@ Delete the entity. Response: * Successful operation uses 204 No Content * Errors
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EntitiesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\EntitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -205,14 +205,14 @@ The request payload is an object representing the new entity attributes. The obj
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EntitiesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\EntitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $entity_id = "entity_id_example"; // string | Id of the entity in question.
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\ReplaceAllEntityAttributesRequest(); // \Swagger\Client\Model\ReplaceAllEntityAttributesRequest | 
+$body = new \Dounasth\Ngsiv2\Model\ReplaceAllEntityAttributesRequest(); // \Dounasth\Ngsiv2\Model\ReplaceAllEntityAttributesRequest | 
 $type = "type_example"; // string | Entity type, to avoid ambiguity in case there are several entities with the same entity id.
 $options = "options_example"; // string | Operations options
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **entity_id** | **string**| Id of the entity in question. |
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\ReplaceAllEntityAttributesRequest**](../Model/ReplaceAllEntityAttributesRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\ReplaceAllEntityAttributesRequest**](../Model/ReplaceAllEntityAttributesRequest.md)|  |
  **type** | **string**| Entity type, to avoid ambiguity in case there are several entities with the same entity id. | [optional]
  **options** | **string**| Operations options | [optional]
 
@@ -250,7 +250,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveEntity**
-> \Swagger\Client\Model\RetrieveEntityResponse retrieveEntity($entity_id, $type, $attrs, $metadata, $options)
+> \Dounasth\Ngsiv2\Model\RetrieveEntityResponse retrieveEntity($entity_id, $type, $attrs, $metadata, $options)
 
 Retrieve Entity
 
@@ -261,7 +261,7 @@ The response is an object representing the entity identified by the ID. The obje
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EntitiesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\EntitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -293,7 +293,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveEntityResponse**](../Model/RetrieveEntityResponse.md)
+[**\Dounasth\Ngsiv2\Model\RetrieveEntityResponse**](../Model/RetrieveEntityResponse.md)
 
 ### Authorization
 
@@ -307,7 +307,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveEntityAttributes**
-> \Swagger\Client\Model\RetrieveEntityAttributesResponse retrieveEntityAttributes($entity_id, $type, $attrs, $metadata, $options)
+> \Dounasth\Ngsiv2\Model\RetrieveEntityAttributesResponse retrieveEntityAttributes($entity_id, $type, $attrs, $metadata, $options)
 
 Retrieve Entity Attributes
 
@@ -318,7 +318,7 @@ This request is similar to retreiving the whole entity, however this one omits t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EntitiesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\EntitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -350,7 +350,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveEntityAttributesResponse**](../Model/RetrieveEntityAttributesResponse.md)
+[**\Dounasth\Ngsiv2\Model\RetrieveEntityAttributesResponse**](../Model/RetrieveEntityAttributesResponse.md)
 
 ### Authorization
 
@@ -375,14 +375,14 @@ The request payload is an object representing the attributes to update. The obje
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EntitiesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\EntitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $entity_id = "entity_id_example"; // string | Id of the entity to be updated
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\UpdateExistingEntityAttributesRequest(); // \Swagger\Client\Model\UpdateExistingEntityAttributesRequest | 
+$body = new \Dounasth\Ngsiv2\Model\UpdateExistingEntityAttributesRequest(); // \Dounasth\Ngsiv2\Model\UpdateExistingEntityAttributesRequest | 
 $type = "type_example"; // string | Entity type, to avoid ambiguity in case there are several entities with the same entity id.
 $options = "options_example"; // string | Operations options
 
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **entity_id** | **string**| Id of the entity to be updated |
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\UpdateExistingEntityAttributesRequest**](../Model/UpdateExistingEntityAttributesRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\UpdateExistingEntityAttributesRequest**](../Model/UpdateExistingEntityAttributesRequest.md)|  |
  **type** | **string**| Entity type, to avoid ambiguity in case there are several entities with the same entity id. | [optional]
  **options** | **string**| Operations options | [optional]
 
@@ -431,14 +431,14 @@ The request payload is an object representing the attributes to append or update
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EntitiesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\EntitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $entity_id = "entity_id_example"; // string | Entity id to be updated
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\UpdateOrAppendEntityAttributesRequest(); // \Swagger\Client\Model\UpdateOrAppendEntityAttributesRequest | 
+$body = new \Dounasth\Ngsiv2\Model\UpdateOrAppendEntityAttributesRequest(); // \Dounasth\Ngsiv2\Model\UpdateOrAppendEntityAttributesRequest | 
 $type = "type_example"; // string | Entity type, to avoid ambiguity in case there are several entities with the same entity id.
 $options = "options_example"; // string | Operations options
 
@@ -456,7 +456,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **entity_id** | **string**| Entity id to be updated |
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\UpdateOrAppendEntityAttributesRequest**](../Model/UpdateOrAppendEntityAttributesRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\UpdateOrAppendEntityAttributesRequest**](../Model/UpdateOrAppendEntityAttributesRequest.md)|  |
  **type** | **string**| Entity type, to avoid ambiguity in case there are several entities with the same entity id. | [optional]
  **options** | **string**| Operations options | [optional]
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Dounasth\Ngsiv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Dounasth\Ngsiv2\ApiException;
+use Dounasth\Ngsiv2\Configuration;
+use Dounasth\Ngsiv2\HeaderSelector;
+use Dounasth\Ngsiv2\ObjectSerializer;
 
 /**
  * AttributesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class AttributesApi
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $metadata A list of metadata names to include in the response. See \&quot;Filtering out attributes and metadata\&quot; section for more detail. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetAttributeDataResponse
+     * @return \Dounasth\Ngsiv2\Model\GetAttributeDataResponse
      */
     public function getAttributeData($entity_id, $attr_name, $type = null, $metadata = null)
     {
@@ -117,13 +117,13 @@ class AttributesApi
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $metadata A list of metadata names to include in the response. See \&quot;Filtering out attributes and metadata\&quot; section for more detail. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetAttributeDataResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\GetAttributeDataResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAttributeDataWithHttpInfo($entity_id, $attr_name, $type = null, $metadata = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAttributeDataResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\GetAttributeDataResponse';
         $request = $this->getAttributeDataRequest($entity_id, $attr_name, $type, $metadata);
 
         try {
@@ -175,7 +175,7 @@ class AttributesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetAttributeDataResponse',
+                        '\Dounasth\Ngsiv2\Model\GetAttributeDataResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class AttributesApi
      */
     public function getAttributeDataAsyncWithHttpInfo($entity_id, $attr_name, $type = null, $metadata = null)
     {
-        $returnType = '\Swagger\Client\Model\GetAttributeDataResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\GetAttributeDataResponse';
         $request = $this->getAttributeDataRequest($entity_id, $attr_name, $type, $metadata);
 
         return $this->client
@@ -402,7 +402,7 @@ class AttributesApi
      * @param  string $attr_name Attribute name. (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -420,7 +420,7 @@ class AttributesApi
      * @param  string $attr_name Attribute name. (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -661,10 +661,10 @@ class AttributesApi
      * @param  string $entity_id Id of the entity to update (required)
      * @param  string $attr_name Attribute name (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateAttributeDataRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateAttributeDataRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -681,10 +681,10 @@ class AttributesApi
      * @param  string $entity_id Id of the entity to update (required)
      * @param  string $attr_name Attribute name (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateAttributeDataRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateAttributeDataRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -738,7 +738,7 @@ class AttributesApi
      * @param  string $entity_id Id of the entity to update (required)
      * @param  string $attr_name Attribute name (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateAttributeDataRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateAttributeDataRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      *
      * @throws \InvalidArgumentException
@@ -762,7 +762,7 @@ class AttributesApi
      * @param  string $entity_id Id of the entity to update (required)
      * @param  string $attr_name Attribute name (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateAttributeDataRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateAttributeDataRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      *
      * @throws \InvalidArgumentException
@@ -802,7 +802,7 @@ class AttributesApi
      * @param  string $entity_id Id of the entity to update (required)
      * @param  string $attr_name Attribute name (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateAttributeDataRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateAttributeDataRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      *
      * @throws \InvalidArgumentException

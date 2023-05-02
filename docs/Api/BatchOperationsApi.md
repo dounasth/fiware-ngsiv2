@@ -1,4 +1,4 @@
-# Swagger\Client\BatchOperationsApi
+# Dounasth\Ngsiv2\BatchOperationsApi
 
 All URIs are relative to *http://orion.lab.fiware.org*
 
@@ -21,13 +21,13 @@ This operation is intended to consume a notification payload so that all the ent
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BatchOperationsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\BatchOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\NotifyRequest(); // \Swagger\Client\Model\NotifyRequest | 
+$body = new \Dounasth\Ngsiv2\Model\NotifyRequest(); // \Dounasth\Ngsiv2\Model\NotifyRequest | 
 $options = "options_example"; // string | Options dictionary
 
 try {
@@ -43,7 +43,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\NotifyRequest**](../Model/NotifyRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\NotifyRequest**](../Model/NotifyRequest.md)|  |
  **options** | **string**| Options dictionary | [optional]
 
 ### Return type
@@ -62,7 +62,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **query**
-> \Swagger\Client\Model\QueryResponse[] query($content_type, $body, $limit, $offset, $order_by, $options)
+> \Dounasth\Ngsiv2\Model\QueryResponse[] query($content_type, $body, $limit, $offset, $order_by, $options)
 
 Query
 
@@ -73,13 +73,13 @@ The response payload is an Array containing one object per matching entity, or a
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BatchOperationsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\BatchOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\QueryRequest(); // \Swagger\Client\Model\QueryRequest | 
+$body = new \Dounasth\Ngsiv2\Model\QueryRequest(); // \Dounasth\Ngsiv2\Model\QueryRequest | 
 $limit = 1.2; // double | Limit the number of entities to be retrieved.
 $offset = 1.2; // double | Skip a number of records.
 $order_by = "order_by_example"; // string | Criteria for ordering results. See \"Ordering Results\" section for details.
@@ -99,7 +99,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\QueryRequest**](../Model/QueryRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\QueryRequest**](../Model/QueryRequest.md)|  |
  **limit** | **double**| Limit the number of entities to be retrieved. | [optional]
  **offset** | **double**| Skip a number of records. | [optional]
  **order_by** | **string**| Criteria for ordering results. See \&quot;Ordering Results\&quot; section for details. | [optional]
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\QueryResponse[]**](../Model/QueryResponse.md)
+[**\Dounasth\Ngsiv2\Model\QueryResponse[]**](../Model/QueryResponse.md)
 
 ### Authorization
 
@@ -132,13 +132,13 @@ This operation allows to create, update and/or delete several entities in a sing
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BatchOperationsApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\BatchOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\UpdateRequest(); // \Swagger\Client\Model\UpdateRequest | 
+$body = new \Dounasth\Ngsiv2\Model\UpdateRequest(); // \Dounasth\Ngsiv2\Model\UpdateRequest | 
 $options = "options_example"; // string | Options dictionary
 
 try {
@@ -154,7 +154,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\UpdateRequest**](../Model/UpdateRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\UpdateRequest**](../Model/UpdateRequest.md)|  |
  **options** | **string**| Options dictionary | [optional]
 
 ### Return type

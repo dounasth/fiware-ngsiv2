@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Dounasth\Ngsiv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Dounasth\Ngsiv2\ApiException;
+use Dounasth\Ngsiv2\Configuration;
+use Dounasth\Ngsiv2\HeaderSelector;
+use Dounasth\Ngsiv2\ObjectSerializer;
 
 /**
  * EntitiesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,10 +93,10 @@ class EntitiesApi
      * Create Entity
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateEntityRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateEntityRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -111,10 +111,10 @@ class EntitiesApi
      * Create Entity
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateEntityRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateEntityRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -166,7 +166,7 @@ class EntitiesApi
      * Create Entity
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateEntityRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateEntityRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
      * @throws \InvalidArgumentException
@@ -188,7 +188,7 @@ class EntitiesApi
      * Create Entity
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateEntityRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateEntityRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
      * @throws \InvalidArgumentException
@@ -226,7 +226,7 @@ class EntitiesApi
      * Create request for operation 'createEntity'
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateEntityRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateEntityRequest $body  (required)
      * @param  string $options Options dictionary (optional)
      *
      * @throws \InvalidArgumentException
@@ -359,9 +359,9 @@ class EntitiesApi
      * @param  string $order_by Criteria for ordering results. See \&quot;Ordering Results\&quot; section for details. (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ListEntitiesResponse[]
+     * @return \Dounasth\Ngsiv2\Model\ListEntitiesResponse[]
      */
     public function listEntities($id = null, $type = null, $id_pattern = null, $type_pattern = null, $q = null, $mq = null, $georel = null, $geometry = null, $coords = null, $limit = null, $offset = null, $attrs = null, $metadata = null, $order_by = null, $options = null)
     {
@@ -390,13 +390,13 @@ class EntitiesApi
      * @param  string $order_by Criteria for ordering results. See \&quot;Ordering Results\&quot; section for details. (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ListEntitiesResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\ListEntitiesResponse[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listEntitiesWithHttpInfo($id = null, $type = null, $id_pattern = null, $type_pattern = null, $q = null, $mq = null, $georel = null, $geometry = null, $coords = null, $limit = null, $offset = null, $attrs = null, $metadata = null, $order_by = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\ListEntitiesResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\ListEntitiesResponse[]';
         $request = $this->listEntitiesRequest($id, $type, $id_pattern, $type_pattern, $q, $mq, $georel, $geometry, $coords, $limit, $offset, $attrs, $metadata, $order_by, $options);
 
         try {
@@ -448,7 +448,7 @@ class EntitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ListEntitiesResponse[]',
+                        '\Dounasth\Ngsiv2\Model\ListEntitiesResponse[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class EntitiesApi
      */
     public function listEntitiesAsyncWithHttpInfo($id = null, $type = null, $id_pattern = null, $type_pattern = null, $q = null, $mq = null, $georel = null, $geometry = null, $coords = null, $limit = null, $offset = null, $attrs = null, $metadata = null, $order_by = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\ListEntitiesResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\ListEntitiesResponse[]';
         $request = $this->listEntitiesRequest($id, $type, $id_pattern, $type_pattern, $q, $mq, $georel, $geometry, $coords, $limit, $offset, $attrs, $metadata, $order_by, $options);
 
         return $this->client
@@ -731,7 +731,7 @@ class EntitiesApi
      * @param  string $entity_id Id of the entity to be deleted (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -748,7 +748,7 @@ class EntitiesApi
      * @param  string $entity_id Id of the entity to be deleted (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -971,11 +971,11 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity in question. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\ReplaceAllEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\ReplaceAllEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -991,11 +991,11 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity in question. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\ReplaceAllEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\ReplaceAllEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1048,7 +1048,7 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity in question. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\ReplaceAllEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\ReplaceAllEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
@@ -1072,7 +1072,7 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity in question. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\ReplaceAllEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\ReplaceAllEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
@@ -1112,7 +1112,7 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity in question. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\ReplaceAllEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\ReplaceAllEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
@@ -1254,9 +1254,9 @@ class EntitiesApi
      * @param  string $metadata A list of metadata names to include in the response. See \&quot;Filtering out attributes and metadata\&quot; section for more detail. (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RetrieveEntityResponse
+     * @return \Dounasth\Ngsiv2\Model\RetrieveEntityResponse
      */
     public function retrieveEntity($entity_id, $type = null, $attrs = null, $metadata = null, $options = null)
     {
@@ -1275,13 +1275,13 @@ class EntitiesApi
      * @param  string $metadata A list of metadata names to include in the response. See \&quot;Filtering out attributes and metadata\&quot; section for more detail. (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RetrieveEntityResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\RetrieveEntityResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEntityWithHttpInfo($entity_id, $type = null, $attrs = null, $metadata = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\RetrieveEntityResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveEntityResponse';
         $request = $this->retrieveEntityRequest($entity_id, $type, $attrs, $metadata, $options);
 
         try {
@@ -1333,7 +1333,7 @@ class EntitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RetrieveEntityResponse',
+                        '\Dounasth\Ngsiv2\Model\RetrieveEntityResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1383,7 +1383,7 @@ class EntitiesApi
      */
     public function retrieveEntityAsyncWithHttpInfo($entity_id, $type = null, $attrs = null, $metadata = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\RetrieveEntityResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveEntityResponse';
         $request = $this->retrieveEntityRequest($entity_id, $type, $attrs, $metadata, $options);
 
         return $this->client
@@ -1559,9 +1559,9 @@ class EntitiesApi
      * @param  string $metadata A list of metadata names to include in the response. See \&quot;Filtering out attributes and metadata\&quot; section for more detail. (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\RetrieveEntityAttributesResponse
+     * @return \Dounasth\Ngsiv2\Model\RetrieveEntityAttributesResponse
      */
     public function retrieveEntityAttributes($entity_id, $type = null, $attrs = null, $metadata = null, $options = null)
     {
@@ -1580,13 +1580,13 @@ class EntitiesApi
      * @param  string $metadata A list of metadata names to include in the response. See \&quot;Filtering out attributes and metadata\&quot; section for more detail. (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\RetrieveEntityAttributesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\RetrieveEntityAttributesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEntityAttributesWithHttpInfo($entity_id, $type = null, $attrs = null, $metadata = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\RetrieveEntityAttributesResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveEntityAttributesResponse';
         $request = $this->retrieveEntityAttributesRequest($entity_id, $type, $attrs, $metadata, $options);
 
         try {
@@ -1638,7 +1638,7 @@ class EntitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\RetrieveEntityAttributesResponse',
+                        '\Dounasth\Ngsiv2\Model\RetrieveEntityAttributesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1688,7 +1688,7 @@ class EntitiesApi
      */
     public function retrieveEntityAttributesAsyncWithHttpInfo($entity_id, $type = null, $attrs = null, $metadata = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\RetrieveEntityAttributesResponse';
+        $returnType = '\Dounasth\Ngsiv2\Model\RetrieveEntityAttributesResponse';
         $request = $this->retrieveEntityAttributesRequest($entity_id, $type, $attrs, $metadata, $options);
 
         return $this->client
@@ -1860,11 +1860,11 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateExistingEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateExistingEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1880,11 +1880,11 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateExistingEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateExistingEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1937,7 +1937,7 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateExistingEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateExistingEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
@@ -1961,7 +1961,7 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateExistingEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateExistingEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
@@ -2001,7 +2001,7 @@ class EntitiesApi
      *
      * @param  string $entity_id Id of the entity to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateExistingEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateExistingEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
@@ -2139,11 +2139,11 @@ class EntitiesApi
      *
      * @param  string $entity_id Entity id to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2159,11 +2159,11 @@ class EntitiesApi
      *
      * @param  string $entity_id Entity id to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2216,7 +2216,7 @@ class EntitiesApi
      *
      * @param  string $entity_id Entity id to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
@@ -2240,7 +2240,7 @@ class EntitiesApi
      *
      * @param  string $entity_id Entity id to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *
@@ -2280,7 +2280,7 @@ class EntitiesApi
      *
      * @param  string $entity_id Entity id to be updated (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateOrAppendEntityAttributesRequest $body  (required)
      * @param  string $type Entity type, to avoid ambiguity in case there are several entities with the same entity id. (optional)
      * @param  string $options Operations options (optional)
      *

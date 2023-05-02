@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Dounasth\Ngsiv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Dounasth\Ngsiv2\ApiException;
+use Dounasth\Ngsiv2\Configuration;
+use Dounasth\Ngsiv2\HeaderSelector;
+use Dounasth\Ngsiv2\ObjectSerializer;
 
 /**
  * SubscriptionsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class SubscriptionsApi
      * Create Subscription
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateSubscriptionRequest $body  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,9 +110,9 @@ class SubscriptionsApi
      * Create Subscription
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateSubscriptionRequest $body  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -164,7 +164,7 @@ class SubscriptionsApi
      * Create Subscription
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateSubscriptionRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -185,7 +185,7 @@ class SubscriptionsApi
      * Create Subscription
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateSubscriptionRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -222,7 +222,7 @@ class SubscriptionsApi
      * Create request for operation 'createSubscription'
      *
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\CreateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\CreateSubscriptionRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -336,7 +336,7 @@ class SubscriptionsApi
      *
      * @param  string $subscription_id subscription Id. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -352,7 +352,7 @@ class SubscriptionsApi
      *
      * @param  string $subscription_id subscription Id. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -570,9 +570,9 @@ class SubscriptionsApi
      * @param  double $offset Skip a number of subscriptions (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ListSubscriptionsResponse[]
+     * @return \Dounasth\Ngsiv2\Model\ListSubscriptionsResponse[]
      */
     public function listSubscriptions($limit = null, $offset = null, $options = null)
     {
@@ -589,13 +589,13 @@ class SubscriptionsApi
      * @param  double $offset Skip a number of subscriptions (optional)
      * @param  string $options Options dictionary (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ListSubscriptionsResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Dounasth\Ngsiv2\Model\ListSubscriptionsResponse[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listSubscriptionsWithHttpInfo($limit = null, $offset = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\ListSubscriptionsResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\ListSubscriptionsResponse[]';
         $request = $this->listSubscriptionsRequest($limit, $offset, $options);
 
         try {
@@ -647,7 +647,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ListSubscriptionsResponse[]',
+                        '\Dounasth\Ngsiv2\Model\ListSubscriptionsResponse[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -693,7 +693,7 @@ class SubscriptionsApi
      */
     public function listSubscriptionsAsyncWithHttpInfo($limit = null, $offset = null, $options = null)
     {
-        $returnType = '\Swagger\Client\Model\ListSubscriptionsResponse[]';
+        $returnType = '\Dounasth\Ngsiv2\Model\ListSubscriptionsResponse[]';
         $request = $this->listSubscriptionsRequest($limit, $offset, $options);
 
         return $this->client
@@ -845,7 +845,7 @@ class SubscriptionsApi
      *
      * @param  string $subscription_id subscription Id. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -862,7 +862,7 @@ class SubscriptionsApi
      *
      * @param  string $subscription_id subscription Id. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1114,9 +1114,9 @@ class SubscriptionsApi
      *
      * @param  string $subscription_id subscription Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateSubscriptionRequest $body  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1132,9 +1132,9 @@ class SubscriptionsApi
      *
      * @param  string $subscription_id subscription Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateSubscriptionRequest $body  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Dounasth\Ngsiv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1187,7 +1187,7 @@ class SubscriptionsApi
      *
      * @param  string $subscription_id subscription Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateSubscriptionRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1209,7 +1209,7 @@ class SubscriptionsApi
      *
      * @param  string $subscription_id subscription Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateSubscriptionRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1247,7 +1247,7 @@ class SubscriptionsApi
      *
      * @param  string $subscription_id subscription Id. (required)
      * @param  string $content_type  (required)
-     * @param  \Swagger\Client\Model\UpdateSubscriptionRequest $body  (required)
+     * @param  \Dounasth\Ngsiv2\Model\UpdateSubscriptionRequest $body  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

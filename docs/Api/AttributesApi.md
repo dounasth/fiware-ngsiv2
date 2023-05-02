@@ -1,4 +1,4 @@
-# Swagger\Client\AttributesApi
+# Dounasth\Ngsiv2\AttributesApi
 
 All URIs are relative to *http://orion.lab.fiware.org*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getAttributeData**
-> \Swagger\Client\Model\GetAttributeDataResponse getAttributeData($entity_id, $attr_name, $type, $metadata)
+> \Dounasth\Ngsiv2\Model\GetAttributeDataResponse getAttributeData($entity_id, $attr_name, $type, $metadata)
 
 Get attribute data
 
@@ -21,7 +21,7 @@ Returns a JSON object with the attribute data of the attribute. The object follo
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AttributesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\AttributesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetAttributeDataResponse**](../Model/GetAttributeDataResponse.md)
+[**\Dounasth\Ngsiv2\Model\GetAttributeDataResponse**](../Model/GetAttributeDataResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Removes an entity attribute. Response: * Successful operation uses 204 No Conten
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AttributesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\AttributesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -128,7 +128,7 @@ The request payload is an object representing the new attribute data. Previous a
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AttributesApi(
+$apiInstance = new Dounasth\Ngsiv2\Api\AttributesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -136,7 +136,7 @@ $apiInstance = new Swagger\Client\Api\AttributesApi(
 $entity_id = "entity_id_example"; // string | Id of the entity to update
 $attr_name = "attr_name_example"; // string | Attribute name
 $content_type = "content_type_example"; // string | 
-$body = new \Swagger\Client\Model\UpdateAttributeDataRequest(); // \Swagger\Client\Model\UpdateAttributeDataRequest | 
+$body = new \Dounasth\Ngsiv2\Model\UpdateAttributeDataRequest(); // \Dounasth\Ngsiv2\Model\UpdateAttributeDataRequest | 
 $type = "type_example"; // string | Entity type, to avoid ambiguity in case there are several entities with the same entity id.
 
 try {
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
  **entity_id** | **string**| Id of the entity to update |
  **attr_name** | **string**| Attribute name |
  **content_type** | **string**|  |
- **body** | [**\Swagger\Client\Model\UpdateAttributeDataRequest**](../Model/UpdateAttributeDataRequest.md)|  |
+ **body** | [**\Dounasth\Ngsiv2\Model\UpdateAttributeDataRequest**](../Model/UpdateAttributeDataRequest.md)|  |
  **type** | **string**| Entity type, to avoid ambiguity in case there are several entities with the same entity id. | [optional]
 
 ### Return type

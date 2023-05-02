@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Dounasth\Ngsiv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Dounasth\Ngsiv2;
 
 /**
  * ListEntitiesResponseTest Class Doc Comment
  *
  * @category    Class
  * @description ListEntitiesResponse
- * @package     Swagger\Client
+ * @package     Dounasth\Ngsiv2
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
